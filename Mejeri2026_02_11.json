@@ -1,0 +1,3007 @@
+[
+    {
+        "id": "55b93f663665111d",
+        "type": "tab",
+        "label": "MilkAutomat",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "87d3f1bce7ea7cea",
+        "type": "tab",
+        "label": "Temp Kontrollant",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "tid_watchdog_flow",
+        "type": "tab",
+        "label": "Tid Watchdog",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "3b3257ccc8cdd2ee",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "614e6cce2bccd90d",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "81177438.6611e8",
+        "type": "ui_tab",
+        "name": "Skålldals lilla Ekomejeri",
+        "icon": "add_shopping_cart",
+        "order": 1,
+        "disabled": false,
+        "hidden": true
+    },
+    {
+        "id": "5db188950f8776dc",
+        "type": "ui_group",
+        "name": "Mjölk automat",
+        "tab": "81177438.6611e8",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3a3f5e01.5e2402",
+        "type": "ui_group",
+        "name": "butikAlarm",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "92fef607687b3672",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "87f553368588d10b",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "10.0.0.167",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "70400805646f737d",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "10.0.0.167",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "a80fad93fdca0d11",
+        "type": "ui_group",
+        "name": "Butik kylrum",
+        "tab": "81177438.6611e8",
+        "order": 4,
+        "disp": true,
+        "width": 3,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "467e2aa29f61ab0b",
+        "type": "ui_group",
+        "name": "Mejeri kylrum",
+        "tab": "81177438.6611e8",
+        "order": 3,
+        "disp": true,
+        "width": 3,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f558a1f6496d67d3",
+        "type": "mqtt-broker",
+        "name": "OracleMqtt",
+        "broker": "144.24.253.135",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "ac339e6f01b5cbda",
+        "type": "ui_group",
+        "name": "Temp",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "74d7ab77d0ec9039",
+        "type": "ui_group",
+        "name": "Mjölk tank",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 3,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bf776b8afb685c77",
+        "type": "ui_group",
+        "name": "        Senast uppdaterad",
+        "tab": "81177438.6611e8",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "tid_ui_group",
+        "type": "ui_group",
+        "name": "Tid",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "caf19afb1f9b9c26",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "2e6bd719a9ab1120",
+        "type": "ui_group",
+        "name": "Överskrift",
+        "tab": "81177438.6611e8",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "799e23c13e6a8b20",
+        "type": "mqtt in",
+        "z": "55b93f663665111d",
+        "name": "",
+        "topic": "DoorAlarm",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "70400805646f737d",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 100,
+        "y": 200,
+        "wires": [
+            [
+                "689922ac35c159bc",
+                "6c66239146996112"
+            ]
+        ]
+    },
+    {
+        "id": "689922ac35c159bc",
+        "type": "json",
+        "z": "55b93f663665111d",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 230,
+        "y": 200,
+        "wires": [
+            [
+                "74f2e15e2e1b23b1"
+            ]
+        ]
+    },
+    {
+        "id": "74f2e15e2e1b23b1",
+        "type": "function",
+        "z": "55b93f663665111d",
+        "name": "",
+        "func": "\nmsg.payload=msg.payload.YtterDoor;\n//msg.payload=msg.payload.Tempen;\n\n\nreturn msg;\n//var msgVikt={payload:a};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 370,
+        "y": 200,
+        "wires": [
+            [
+                "2d334e02462cbf5e"
+            ]
+        ]
+    },
+    {
+        "id": "dc84380e247d2a23",
+        "type": "switch",
+        "z": "55b93f663665111d",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Altandörr ut öppen",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 770,
+        "y": 2480,
+        "wires": [
+            [
+                "7c4ca1f732127e33",
+                "17351e2541420c6c"
+            ]
+        ]
+    },
+    {
+        "id": "8b924d926fc57c98",
+        "type": "change",
+        "z": "55b93f663665111d",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "num",
+                "to": "Altandörr stängd",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "3",
+                "fromt": "num",
+                "to": "Altandörr ut öppen",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "4",
+                "fromt": "num",
+                "to": "Ingen kontakt Altan Sensor",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Butiken",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 2520,
+        "wires": [
+            [
+                "6676fa71ae9baab5",
+                "dc84380e247d2a23"
+            ]
+        ]
+    },
+    {
+        "id": "7c4ca1f732127e33",
+        "type": "change",
+        "z": "55b93f663665111d",
+        "name": "Alarm på=7",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "7",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 970,
+        "y": 2480,
+        "wires": [
+            [
+                "3d11b046a6028fd6"
+            ]
+        ]
+    },
+    {
+        "id": "17351e2541420c6c",
+        "type": "function",
+        "z": "55b93f663665111d",
+        "name": "",
+        "func": "//vid dörr larm skicka till ifttt 20 ggr\nvar DoorOpen=flow.get('AltanDoorOpen') || 0;\nvar counter=flow.get('counterAltan') || 0;\nvar msg2=[];\n\nif (msg.payload==\"Altandörr ut öppen\"){\n    DoorOpen=1;//sätt flagga\n    \n    }\nif(DoorOpen==1){\n    counter++;\n    if(counter>20){\n        counter=0;\n        DoorOpen=0;\n    }else{\n        msg.payload=7;\n    }\n} else{\n    msg=null;\n}   \n\n//Om dörr öppen\n\n    //Om Counter<8\n    \n    \n    //else Counter=0,DoorOpen=false\n\n\n   flow.set('AltanDoorOpen',DoorOpen);\n   flow.set('counterAltan',counter);\n\nreturn [msg,msg2];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 850,
+        "y": 2380,
+        "wires": [
+            [
+                "7c4ca1f732127e33"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f1cc9c846f3b7f75",
+        "type": "function",
+        "z": "55b93f663665111d",
+        "name": "",
+        "func": "msg.payload=msg.payload.YtterDoor\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 370,
+        "y": 2520,
+        "wires": [
+            [
+                "8b924d926fc57c98",
+                "85d103f1fc79f948"
+            ]
+        ]
+    },
+    {
+        "id": "6676fa71ae9baab5",
+        "type": "rbe",
+        "z": "55b93f663665111d",
+        "name": "Bara ett medelande",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 170,
+        "y": 2600,
+        "wires": [
+            [
+                "2bf855e3a6722dd9"
+            ]
+        ]
+    },
+    {
+        "id": "85d103f1fc79f948",
+        "type": "trigger",
+        "z": "55b93f663665111d",
+        "name": "WatchDog",
+        "op1": "",
+        "op2": "4",
+        "op1type": "nul",
+        "op2type": "num",
+        "duration": "120",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 510,
+        "y": 2460,
+        "wires": [
+            [
+                "8b924d926fc57c98"
+            ]
+        ]
+    },
+    {
+        "id": "3d11b046a6028fd6",
+        "type": "mqtt out",
+        "z": "55b93f663665111d",
+        "name": "",
+        "topic": "Alarma",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "614e6cce2bccd90d",
+        "x": 1120,
+        "y": 2480,
+        "wires": []
+    },
+    {
+        "id": "eee63e0a7fb84a4e",
+        "type": "inject",
+        "z": "55b93f663665111d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Ytterdörr Öppen",
+        "payloadType": "str",
+        "x": 540,
+        "y": 2360,
+        "wires": [
+            [
+                "17351e2541420c6c"
+            ]
+        ]
+    },
+    {
+        "id": "e8c9f1ba271236ee",
+        "type": "inject",
+        "z": "55b93f663665111d",
+        "name": "",
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 550,
+        "y": 2400,
+        "wires": [
+            [
+                "17351e2541420c6c"
+            ]
+        ]
+    },
+    {
+        "id": "ed66a0cc2976e656",
+        "type": "json",
+        "z": "55b93f663665111d",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 250,
+        "y": 2520,
+        "wires": [
+            [
+                "f1cc9c846f3b7f75"
+            ]
+        ]
+    },
+    {
+        "id": "2bf855e3a6722dd9",
+        "type": "function",
+        "z": "55b93f663665111d",
+        "name": "Status Charging To Sheet",
+        "func": "msg.payload = { val: msg.payload,\n                type:'charge'};\n msg.headers = {'content-type':'application/x-www-form-urlencoded'};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 390,
+        "y": 2600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2f50ba3d12c8a1fe",
+        "type": "mqtt in",
+        "z": "55b93f663665111d",
+        "name": "",
+        "topic": "MilkAutomatTemp",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "70400805646f737d",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 150,
+        "y": 740,
+        "wires": [
+            [
+                "02aaefe257d72730",
+                "2108e758b462288c",
+                "fc854e94bfab5d6e"
+            ]
+        ]
+    },
+    {
+        "id": "9f7771373067683f",
+        "type": "split",
+        "z": "55b93f663665111d",
+        "name": "",
+        "splt": ":",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 390,
+        "y": 680,
+        "wires": [
+            [
+                "3eb5bc2056623072",
+                "798f6a8502b903ec"
+            ]
+        ]
+    },
+    {
+        "id": "0eefcb85453bc34f",
+        "type": "json",
+        "z": "55b93f663665111d",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 270,
+        "y": 680,
+        "wires": [
+            [
+                "9f7771373067683f"
+            ]
+        ]
+    },
+    {
+        "id": "2648ce69018770b8",
+        "type": "comment",
+        "z": "55b93f663665111d",
+        "name": "********************       Watchdog Mjölk automaten       ********************",
+        "info": "",
+        "x": 300,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "3eb5bc2056623072",
+        "type": "function",
+        "z": "55b93f663665111d",
+        "name": "Kalibrera",
+        "func": "var a=msg.payload;\na=a*1.2;\n// a=Math.round(a*10)/10  //returns 28.5\n   a=Math.round(a)  //returns 28\n msg.payload=a;\nreturn msg;\n\n\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 720,
+        "wires": [
+            [
+                "80f21b1aa50c93d2",
+                "713fee8d36e6753e"
+            ]
+        ]
+    },
+    {
+        "id": "be816a3c4acf1224",
+        "type": "function",
+        "z": "55b93f663665111d",
+        "name": "Style Gauge",
+        "func": "msg.ui_control = \n\n{\n    \"gtype\": \"wave\",\n\n    \"options\":{\n        \"circleColor\": msg.circleColor, \n        \"textColor\": msg.textColor, \n        \"waveTextColor\": msg.waveTextColor, \n        \"waveColor\": msg.waveColor, \n        \"circleThickness\":0.06, \n        \"textVertPosition\":0.4, \n        \"waveHeight\":0.08, \n        \"waveCount\":3\n    \n}\n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 510,
+        "y": 1080,
+        "wires": [
+            [
+                "19cd03e8b40f9b11"
+            ]
+        ]
+    },
+    {
+        "id": "ca06310bc8ed15b6",
+        "type": "template",
+        "z": "55b93f663665111d",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<div class =\"chartlike\" > {{topic}} </div>",
+        "output": "str",
+        "x": 460,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f7894d5e213d1231",
+        "type": "function",
+        "z": "55b93f663665111d",
+        "name": "Skicka temp på Mjölkkannan",
+        "func": "msg.payload = { val: msg.payload,\n                //val1:'hej',\n                type:'temperatureMilk'};\n msg.headers = {'content-type':'application/x-www-form-urlencoded'};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 640,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d4df565b33a0d408",
+        "type": "comment",
+        "z": "55b93f663665111d",
+        "name": "********************       Temperaturen Mjölk automaten       ********************",
+        "info": "",
+        "x": 610,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "80f21b1aa50c93d2",
+        "type": "rbe",
+        "z": "55b93f663665111d",
+        "name": "Värdet måste förändras",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 630,
+        "y": 720,
+        "wires": [
+            [
+                "f7894d5e213d1231"
+            ]
+        ]
+    },
+    {
+        "id": "02aaefe257d72730",
+        "type": "trigger",
+        "z": "55b93f663665111d",
+        "name": "",
+        "op1": "",
+        "op2": "",
+        "op1type": "nul",
+        "op2type": "payl",
+        "duration": "5",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 120,
+        "y": 680,
+        "wires": [
+            [
+                "0eefcb85453bc34f"
+            ]
+        ]
+    },
+    {
+        "id": "6f0f372d242780d2",
+        "type": "mqtt in",
+        "z": "55b93f663665111d",
+        "name": "In från ultraljuds givare",
+        "topic": "levelMilk",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "70400805646f737d",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 260,
+        "y": 980,
+        "wires": [
+            [
+                "90f9c4c76cbe98b4"
+            ]
+        ]
+    },
+    {
+        "id": "90f9c4c76cbe98b4",
+        "type": "json",
+        "z": "55b93f663665111d",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 430,
+        "y": 980,
+        "wires": [
+            [
+                "3b5ce000654f11d1"
+            ]
+        ]
+    },
+    {
+        "id": "3b5ce000654f11d1",
+        "type": "split",
+        "z": "55b93f663665111d",
+        "name": "",
+        "splt": ":",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 550,
+        "y": 980,
+        "wires": [
+            [
+                "15b498e775802c40"
+            ]
+        ]
+    },
+    {
+        "id": "15b498e775802c40",
+        "type": "function",
+        "z": "55b93f663665111d",
+        "name": "",
+        "func": "var a=msg.payload;\na=((a/8.67)-56)*2.38;\n// a=Math.round(a) ;\nmsg.payload=a;\n\n//700=100%\n//355=1%\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 670,
+        "y": 980,
+        "wires": [
+            [
+                "fbf6dc5c6b3d0285"
+            ]
+        ]
+    },
+    {
+        "id": "fcf54ab52b8d57de",
+        "type": "function",
+        "z": "55b93f663665111d",
+        "name": "",
+        "func": "var alarmColor=context.get('alarmColor') || {};\n\nvar circleColor=\"#FFFFFF\";\nvar textColor=\"#FFFFFF\";\nvar waveTextColor=\"#FFFFFF\";\nvar waveColor=\"#FFFFFF\";\n\nconst full=90;\nconst enTredjedel=30;\nconst tom=15;\n\nif (alarmColor.on===undefined)\n\n    { //test exists\n        alarmColor.on=0;\n        alarmColor.full=false;\n        alarmColor.fullFlagga=false;\n        \n        alarmColor.enTredjedel=false;\n        alarmColor.enTredjedelFlagga=false;\n        \n        alarmColor.tom=false;\n        alarmColor.tomFlagga=false;\n         //node.warn(\"Initiering\");\n         alarmColor.lastPayload=45;\n        \n    }\n  var pay=msg.payload;  \n   //node.warn(\"pay\");\n   // node.warn(pay);\n\n     if(pay>enTredjedel)\n        {\n            \n                    node.warn(\"första11\");\n                    circleColor=\"#F1F1CF\";\n                    textColor=\"#48861F\";\n                    waveTextColor=\"#48861F\";\n                    waveColor=\"#F1F1CF\";\n                    alarmColor.fullFlagga=true; \n                    alarmColor.enTredjedel=false;\n                    \n                \n        }\n    \n     else if(pay<= enTredjedel && pay > tom )\n        {\n            \n                         node.warn(\"andra22\");\n                    circleColor=\"#F1F1CF\";\n                    textColor=\"#b2ddfb\";\n                    waveTextColor=\"#ff0000\";\n                    waveColor=\"#ff0000\";\n                    alarmColor.enTredjedel=true;\n                    alarmColor.fullFlagga=false;\n                \n        }\n    \n    else\n        {\n                // node.warn(\"tredje\");\n            \n                      //   node.warn(\"tredje33\");\n                    circleColor=\"#ff0000\";\n                    textColor=\"#ff0000\";\n                    waveTextColor=\"#ff0000\";\n                    waveColor=\"#ff0000\";\n                    alarmColor.tom=true;    \n                \n        }\n    \n    \ncontext.set('alarmColor',alarmColor);\nmsg.circleColor=circleColor;\nmsg.textColor=textColor;\nmsg.waveTextColor=waveTextColor;\nmsg.waveColor=waveColor;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 1080,
+        "wires": [
+            [
+                "19cd03e8b40f9b11",
+                "ca06310bc8ed15b6",
+                "be816a3c4acf1224"
+            ]
+        ]
+    },
+    {
+        "id": "59300193c1ca4a5a",
+        "type": "comment",
+        "z": "55b93f663665111d",
+        "name": "Diverse nummer som är bra",
+        "info": "Komunikation\n\n\n\n\nhttps://script.google.com/macros/s/AKfycbwWoet33XEKrIKHRB0M9RJgH_In3mqhaqX-RCAQ9Q9nNvIvSGc/exec?value={{{payload}}}\n\n\npushover api=>aywwp5jybu2nvb1sdzos4qfbiuv7pg\n         key=>un6ufg5f6z1wtmafxxzakisd1wtsb1",
+        "x": 1100,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "05dcb7eafa9fb5bc",
+        "type": "function",
+        "z": "55b93f663665111d",
+        "name": "",
+        "func": "var te=context.get('te') || {};\nvar msg2={};\nvar msg3={};\nconst highTemp=6;\nconst howManyMinutesWithHighTempBeforeAlarm=5;\nconst howManyLowTempBeforeResett=4;\nconst howMannySnoozeMinutes=25;\nconst timeAlarmUppeHoldInTenseconds=3;\nconst antalLarmInnanHoldUpp=4;\nconst textSnoozeKnapp=\"snooze Mjölkautomat alarm:\";\nconst textCommError=\"Mjölkautomat ingen kontakt\";\nconst textOkText=\"Mjölkautomat OK       \";\n//msg.topic=\"larma ej\";//en slags initiering\n\n\nif (te.on===undefined){ //test exists\n    //populera klassen första gången\n    te.gotHighTemp=false;\n    te.flippFlop=false\n    //highTemp.weAreSendingAlarm=false;   //om vi sänder alarm\n    te.minutHighTempCounter=0;//vi skall vänta med att larma i \n    te.snoozeCounter=0;//minuter tills han skall larma\n    te.lowTempCounter=0;//hur många gånger han skall ha icke larm innan \n        //han tar bort larm flagga\n    te.larmSnoozat=false;\n    te.on=0;\n    te.Alarm=\"larmAv\";\n    te.highTempMinuteBeforeAlarmCounter=0;\n    te.isItAlowedToAlarmToMobil=false;\n\n    \n    //flaggor för en larm sekvens av tre larm\n    //sedan uppehåll i 2 minuter sedan larm igen osv\n    te.counterAlarmTreSekvens=0;\n    te.counterAlarmUppehold=0;\n    te.alive=0;\n    //knapp grejor\n    te.textButton=textOkText;//först tar vi texten\n    te.colourButton=\"green\";\n    te.buttonEnabled=false;\n    //node.warn(\"Initiering\");\n}\n\n//********************************************\n//****    Vi har fått in temp angivelse    ***\n//********************************************\nif(msg.topic===\"temp\")\n    {\n        te.alive=0; //vi lever\n        te.textButton=textOkText;\n        te.textButton=te.textButton+te.alive;\n       // node.warn(\"topic=temp\");\n        //node.warn(msg.payload);\n        if (msg.payload>highTemp)\n            {\n               // node.warn(\"sätter high temp\");\n                te.gotHighTemp=true; \n                te.lowTempCounter=0;//resetta räknaren vi fick en hög temp\n            }\n        if(msg.payload<highTemp && te.gotHighTemp===true )  //vi är i alarm mode men fått in låg temp räkna gånger\n            {                       //\n                //node.warn(\"räknar lågtemp\");\n                te.lowTempCounter ++;\n                if(te.lowTempCounter>howManyLowTempBeforeResett) //kolla om vi skall avbryta alarm\n                    {\n                       // node.warn(\"Resettar High temp\");\n                        //resetta allt\n                        te.gotHighTemp=false;\n                        te.flippFlop=false;\n                        te.minutCounter=0;\n                        te.larmSnoozat=false;\n                        te.snoozeCounter=0;//minuter tills han skall larma\n                        te.lowTempCounter=0\n                        te.highTempMinuteBeforeAlarmCounter=0;\n                        te.isItAlowedToAlarmToMobil=false;\n                    }\n            }    \n            \n    }\n//********************************************\n\n//********************************************\n//****    Vi har fått in 10 sek Tick    ***\n//********************************************\n\nif(msg.topic==\"sekTick\")\n    {\n        te.alive++;//räkna upp watch dogen\n        te.textButton=textOkText;\n        te.textButton=te.textButton+te.alive;\n        //msg2.background=\"green\";\n        te.colourButton=\"green\";\n        if(te.alive>3)//det har troligtvis hänt något\n            {\n              te.textButton=textCommError \n              //msg2.background=\"red\";\n              te.colourButton=\"red\";\n            }\n        else\n        {\n          if(te.isItAlowedToAlarmToMobil===true && te.larmSnoozat===false)//vi är i alarm mode\n            {\n                // fixa snooze text till knappen\n                te.textButton=textSnoozeKnapp;\n                //kör igång larmsekvens 3 larm till mobilen\n                //sedan uppehåll 1 minut, sedan upprepas det\n                //kör lite flippFlopp\n                if(te.counterAlarmTreSekvens>antalLarmInnanHoldUpp)//har vi skickat tre larm till mobil\n                    {   //börja köra vänte timer\n                        //tja  \n                        te.counterAlarmUppehold++;\n                        // node.warn(\"håll upp med larm counter nedan\");\n                        //node.warn(te.counterAlarmUppehold);\n                    if(te.counterAlarmUppehold>timeAlarmUppeHoldInTenseconds)//\n                        {\n                        //då börjar vi om igen med allt\n                            te.counterAlarmUppehold=0;\n                            te.counterAlarmTreSekvens=0;\n                            //node.warn(\"Nu larmar vi mobil igen\");\n                        }\n                    }\n                else\n                {\n                    if(te.flippFlop===true)\n                    {\n                        //node.warn(\"Flipp Inget larm\");\n                        te.flippFlop=false; \n                    }\n                    else\n                    {\n                        te.flippFlop=true;\n                        te.counterAlarmTreSekvens++;\n                        //node.warn(\"Flipp larm countern nedan\");\n                        //node.warn(te.counterAlarmTreSekvens);\n                        msg.topic=\"larma till mobil\"\n                    }\n                }\n            }\n        }\n    }\n\n//********************************************\n\n//*****************************************************\n//**   Vi har fått in ett tryck på snoozeKnappen     **\n//*****************************************************\nif(msg.topic==\"snoozeKnapp\")// någon tryckte på snooze knappen\n    {\n        te.larmSnoozat=true;\n    }\n\n\n//********************************************\n\n//*****************************************************\n//**   Vi har fått ett minutTick     **\n//*****************************************************\nif(msg.topic==\"minutTick\") \n    //kolla först om vi är i alarm mode\n    {\n        if(te.gotHighTemp===true && te.larmSnoozat===false )\n            //vi var i alarm mode, och ej snoozade\n            // börja att räkna fram till \"larma mobil\"\n            {\n                te.highTempMinuteBeforeAlarmCounter++;\n                if (te.highTempMinuteBeforeAlarmCounter>howManyMinutesWithHighTempBeforeAlarm)\n                    {\n                        te.highTempMinuteBeforeAlarmCounter=howManyMinutesWithHighTempBeforeAlarm;\n                        te.isItAlowedToAlarmToMobil=true;//larma till mobil\n                        te.Alarm=\"larmOn\";\n                    }\n            }\n        else if(te.larmSnoozat===true)\n            {\n                te.snoozeCounter++; \n                if(te.snoozeCounter>howMannySnoozeMinutes)\n                    {\n                        //vi skall larma igen\n                        te.snoozeCounter=0;\n                        te.larmSnoozat=false;\n                        te.highTempMinuteBeforeAlarmCounter=howManyMinutesWithHighTempBeforeAlarm; \n                    }\n            }\n    }\n//********************************************\n\n//********************************************\n//****    Här sköter vi snooze knappen      **\n//********************************************\nif(te.isItAlowedToAlarmToMobil===true && te.larmSnoozat===false) //vi skall visa knapp\n    {\n        te.buttonEnabled=true;\n    }\nelse if(te.isItAlowedToAlarmToMobil===true && te.larmSnoozat===true) //vi skall disable knappen\n            {\n             te.buttonEnabled=false; \n            }\nelse\n    {\n     te.buttonEnabled=false;\n    }\n\n\n//********************************************\n\n//********************************************\n//****    Här sköter vi snooze knappen      **\n//****    vilken färg, om enabeld samt       **\n//****    vilken text                       **\n//********************************************\n\nmsg2.topic=te.textButton;\nmsg2.enabled=te.buttonEnabled;\nmsg2.background=te.colourButton;\nif (te.colourButton==\"green\")\n{\n    msg3.payload=0;  \n}\nelse\n{\n    msg3.payload=1;   \n}\n\n//********************************************\n\ncontext.set('te',te);\n\n\nreturn [msg, msg2, msg3];\n/*\n----------------------\nif(msg.topic==\"\")\n    {\n     if()\n         {\n             \n         }\n    }\nelse\n    {\n        \n    }\n---------------------\n\nif()\n    {\n        \n    }\nelse\n    {\n        \n    }\n---------------------------\n*/",
+        "outputs": 3,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1030,
+        "y": 680,
+        "wires": [
+            [
+                "2efb8ff0ceaa2c8f"
+            ],
+            [
+                "f312c4094647a1ff"
+            ],
+            [
+                "ac4fe91df7962b71",
+                "39e6559225071c14"
+            ]
+        ]
+    },
+    {
+        "id": "2efb8ff0ceaa2c8f",
+        "type": "switch",
+        "z": "55b93f663665111d",
+        "name": "larm till mobil",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "larma till mobil",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 930,
+        "y": 740,
+        "wires": [
+            [
+                "b614987cb148c0ab"
+            ]
+        ]
+    },
+    {
+        "id": "b614987cb148c0ab",
+        "type": "change",
+        "z": "55b93f663665111d",
+        "name": "hög temp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Mjölkautomat",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Hög temp",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ac4fe91df7962b71",
+        "type": "switch",
+        "z": "55b93f663665111d",
+        "name": "background=red",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1170,
+        "y": 740,
+        "wires": [
+            [
+                "c337d7ad8c205fb5"
+            ]
+        ]
+    },
+    {
+        "id": "c337d7ad8c205fb5",
+        "type": "change",
+        "z": "55b93f663665111d",
+        "name": "no contact",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Mjölkautomat ingen kontakt",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1370,
+        "y": 740,
+        "wires": [
+            [
+                "8a82ebe691133332"
+            ]
+        ]
+    },
+    {
+        "id": "39e6559225071c14",
+        "type": "switch",
+        "z": "55b93f663665111d",
+        "name": "background=green",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1170,
+        "y": 780,
+        "wires": [
+            [
+                "0b83faab9905d515"
+            ]
+        ]
+    },
+    {
+        "id": "0b83faab9905d515",
+        "type": "change",
+        "z": "55b93f663665111d",
+        "name": "contact",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Mjölkautomat fungerar",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1340,
+        "y": 780,
+        "wires": [
+            [
+                "8a82ebe691133332"
+            ]
+        ]
+    },
+    {
+        "id": "8a82ebe691133332",
+        "type": "rbe",
+        "z": "55b93f663665111d",
+        "name": "bara en förändring",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 1370,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a034344e9b2683ac",
+        "type": "inject",
+        "z": "55b93f663665111d",
+        "name": "10 sekunder tick",
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "sekTick",
+        "payload": "",
+        "payloadType": "date",
+        "x": 810,
+        "y": 580,
+        "wires": [
+            [
+                "05dcb7eafa9fb5bc"
+            ]
+        ]
+    },
+    {
+        "id": "a8bdd1542870d1cd",
+        "type": "inject",
+        "z": "55b93f663665111d",
+        "name": "1 minut tick",
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "minutTick",
+        "payload": "",
+        "payloadType": "date",
+        "x": 810,
+        "y": 620,
+        "wires": [
+            [
+                "05dcb7eafa9fb5bc"
+            ]
+        ]
+    },
+    {
+        "id": "798f6a8502b903ec",
+        "type": "change",
+        "z": "55b93f663665111d",
+        "name": "topic=>temp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "temp",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 680,
+        "wires": [
+            [
+                "05dcb7eafa9fb5bc"
+            ]
+        ]
+    },
+    {
+        "id": "6c66239146996112",
+        "type": "debug",
+        "z": "55b93f663665111d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 330,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "4b8a4e8b2eaa3ae3",
+        "type": "rbe",
+        "z": "55b93f663665111d",
+        "name": "Skicka bara om det blir förändring",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 280,
+        "y": 1180,
+        "wires": [
+            [
+                "fcf54ab52b8d57de"
+            ]
+        ]
+    },
+    {
+        "id": "fbf6dc5c6b3d0285",
+        "type": "link out",
+        "z": "55b93f663665111d",
+        "name": "tja",
+        "mode": "link",
+        "links": [
+            "912761fa8c9ab605"
+        ],
+        "x": 785,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "912761fa8c9ab605",
+        "type": "link in",
+        "z": "55b93f663665111d",
+        "name": "",
+        "links": [
+            "fbf6dc5c6b3d0285"
+        ],
+        "x": 135,
+        "y": 1240,
+        "wires": [
+            [
+                "e17d446c592668dd"
+            ]
+        ]
+    },
+    {
+        "id": "2d334e02462cbf5e",
+        "type": "change",
+        "z": "55b93f663665111d",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Butiken",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Det kom en kund eller så gick hen :)",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2108e758b462288c",
+        "type": "debug",
+        "z": "55b93f663665111d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "f312c4094647a1ff",
+        "type": "ui_button",
+        "z": "55b93f663665111d",
+        "name": "",
+        "group": "3a3f5e01.5e2402",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "{{msg.topic}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.background}}",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "snoozeKnapp",
+        "topicType": "str",
+        "x": 1030,
+        "y": 600,
+        "wires": [
+            [
+                "05dcb7eafa9fb5bc"
+            ]
+        ]
+    },
+    {
+        "id": "19cd03e8b40f9b11",
+        "type": "ui_gauge",
+        "z": "55b93f663665111d",
+        "name": "",
+        "group": "5db188950f8776dc",
+        "order": 1,
+        "width": 3,
+        "height": 3,
+        "gtype": "wave",
+        "title": "Tank",
+        "label": "",
+        "format": "{{value}}",
+        "min": "-2",
+        "max": "106",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 650,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "e17d446c592668dd",
+        "type": "smooth",
+        "z": "55b93f663665111d",
+        "name": "",
+        "property": "payload",
+        "action": "mean",
+        "count": "16",
+        "round": "0",
+        "mult": "single",
+        "reduce": false,
+        "x": 220,
+        "y": 1240,
+        "wires": [
+            [
+                "19cd03e8b40f9b11",
+                "4b8a4e8b2eaa3ae3"
+            ]
+        ]
+    },
+    {
+        "id": "0f3a0070f328c8c4",
+        "type": "function",
+        "z": "55b93f663665111d",
+        "name": "Sätt status + färg",
+        "func": "if (msg.payload === \"OFFLINE\") {\n    msg.status = \"OFFLINE\";\n    msg.color = \"red\";\n    msg.payload = 0;  // värde på gauge när OFFLINE\n} else {\n    msg.status = \"OK\";\n    msg.color = \"lime\"; // ljusgrön\n    msg.payload = Number(msg.payload);\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 820,
+        "wires": [
+            [
+                "713fee8d36e6753e",
+                "9f43aa5c6f67ede4"
+            ]
+        ]
+    },
+    {
+        "id": "fc854e94bfab5d6e",
+        "type": "trigger",
+        "z": "55b93f663665111d",
+        "name": "Watchdog 40 s",
+        "op1": "",
+        "op2": "OFFLINE",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "40",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 400,
+        "y": 800,
+        "wires": [
+            [
+                "0f3a0070f328c8c4"
+            ]
+        ]
+    },
+    {
+        "id": "713fee8d36e6753e",
+        "type": "ui_gauge",
+        "z": "55b93f663665111d",
+        "name": "Temp Mjölkautomat",
+        "group": "5db188950f8776dc",
+        "order": 2,
+        "width": 3,
+        "height": 3,
+        "gtype": "gage",
+        "title": "",
+        "label": "",
+        "format": "{{value | number:1}}",
+        "min": 0,
+        "max": "10",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "5",
+        "seg2": "8",
+        "diff": false,
+        "className": "",
+        "x": 750,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "9f43aa5c6f67ede4",
+        "type": "ui_template",
+        "z": "55b93f663665111d",
+        "group": "5db188950f8776dc",
+        "name": "Statusrad",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"text-align:center; margin-bottom:4px;\">\n    <span style=\"color: {{msg.color}}; font-weight:bold; font-size: 12px;\">\n        {{msg.status}}\n    </span>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 580,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c6df9c25e242f9c9",
+        "type": "inject",
+        "z": "55b93f663665111d",
+        "name": "Simulerad temp från ESP",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "300",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "7.3",
+        "payloadType": "num",
+        "x": 150,
+        "y": 880,
+        "wires": [
+            [
+                "fc854e94bfab5d6e"
+            ]
+        ]
+    },
+    {
+        "id": "85d6a073d5dacb98",
+        "type": "comment",
+        "z": "55b93f663665111d",
+        "name": "",
+        "info": "så här stod det innan ändring->{{value}}\njag ändrar till->\n{{value}} °C – {{msg.msgtext}}\n",
+        "x": 700,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "72d31f1a92c38d56",
+        "type": "ui_template",
+        "z": "55b93f663665111d",
+        "group": "",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    /* Ta bort eventuell “tom topp-yta” */\n    .nr-dashboard-theme md-content,\n    .nr-dashboard-theme .md-content {\n        padding-top: 0 !important;\n    }\n</style>\n\n<script>\n    (function() {\n  function killTopbar() {\n    // Vanliga varianter i Node-RED Dashboard v1\n    const selectors = [\n      'header',                 // ibland ligger topbaren i <header>\n      'md-toolbar',             // Angular Material toolbar\n      '.nr-dashboard-header',   // vissa themes/byggen\n      '#header'                 // ibland id=\"header\"\n    ];\n\n    selectors.forEach(sel => {\n      document.querySelectorAll(sel).forEach(el => {\n        // Göm den helt\n        el.style.display = 'none';\n        el.style.height = '0';\n        el.style.minHeight = '0';\n        el.style.padding = '0';\n        el.style.margin = '0';\n      });\n    });\n\n    // Ibland finns en wrapper som lämnar luft\n    document.body.style.paddingTop = '0';\n    document.body.style.marginTop = '0';\n  }\n\n  // Kör direkt + några gånger efter load (Angular kan rendera om)\n  killTopbar();\n  setTimeout(killTopbar, 200);\n  setTimeout(killTopbar, 800);\n  setTimeout(killTopbar, 2000);\n})();\n</script>\n\n<style>\n  /* === HUVUDÖVERSKRIFT === */\n  .slel-title {\n    width: 100%;\n    text-align: center;\n    font-size: 28px;\n    font-weight: 600;\n    color: #00bcd4;\n    /* turkos – matchar dashboard-temat */\n    padding: 10px 0 6px 0;\n    letter-spacing: 0.3px;\n  }\n\n  /* === TA BORT KORT-KÄNSLA RUNT TEMPLATE-WIDGET === */\n  .nr-dashboard-template {\n    background: transparent !important;\n    border: none !important;\n    box-shadow: none !important;\n  }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 200,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3d39ea2b81360272",
+        "type": "ui_template",
+        "z": "55b93f663665111d",
+        "group": "2e6bd719a9ab1120",
+        "name": "Överskrift",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"slel-title\">\n    Skålldals lilla Ekomejeri\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 200,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f02aea8c71da99c6",
+        "type": "mqtt in",
+        "z": "87d3f1bce7ea7cea",
+        "name": "",
+        "topic": "TempButikFrysrum",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "70400805646f737d",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 110,
+        "y": 700,
+        "wires": [
+            [
+                "2ad3489a93c31f7d"
+            ]
+        ]
+    },
+    {
+        "id": "5e9dd2705707dd28",
+        "type": "split",
+        "z": "87d3f1bce7ea7cea",
+        "name": "",
+        "splt": ":",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 370,
+        "y": 760,
+        "wires": [
+            [
+                "1dacbdaadfa1d451"
+            ]
+        ]
+    },
+    {
+        "id": "e960fb71ccc11eac",
+        "type": "json",
+        "z": "87d3f1bce7ea7cea",
+        "name": "ordna",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 250,
+        "y": 760,
+        "wires": [
+            [
+                "5e9dd2705707dd28"
+            ]
+        ]
+    },
+    {
+        "id": "15f9295f08ed73f5",
+        "type": "mqtt in",
+        "z": "87d3f1bce7ea7cea",
+        "name": "",
+        "topic": "TempMejeriFrysrum",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "87f553368588d10b",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "b8ca3e0035650c08"
+            ]
+        ]
+    },
+    {
+        "id": "a24bae77da6d6403",
+        "type": "split",
+        "z": "87d3f1bce7ea7cea",
+        "name": "",
+        "splt": ":",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 370,
+        "y": 160,
+        "wires": [
+            [
+                "6ea82ba69b6a7806"
+            ]
+        ]
+    },
+    {
+        "id": "28d2073d98b5d0c3",
+        "type": "json",
+        "z": "87d3f1bce7ea7cea",
+        "name": "Ordna",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 250,
+        "y": 160,
+        "wires": [
+            [
+                "a24bae77da6d6403"
+            ]
+        ]
+    },
+    {
+        "id": "c58fc849587fb459",
+        "type": "ui_gauge",
+        "z": "87d3f1bce7ea7cea",
+        "name": "gaugeMejeriKylRum",
+        "group": "74d7ab77d0ec9039",
+        "order": 1,
+        "width": 3,
+        "height": 3,
+        "gtype": "gage",
+        "title": "",
+        "label": "temp",
+        "format": "{{value | number:1}}",
+        "min": "0",
+        "max": "15",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "7",
+        "seg2": "6",
+        "diff": false,
+        "className": "",
+        "x": 240,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "6ea82ba69b6a7806",
+        "type": "function",
+        "z": "87d3f1bce7ea7cea",
+        "name": "Kalibrering samt  tempalarm",
+        "func": "msg.payload=msg.payload*0.75;\nvar a=msg.payload;\n //a=Math.round(a*10)/10  //returns 28.5\n  a=Math.round(a)  //returns 28\n msg.payload=a;\n\nreturn msg;",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 220,
+        "wires": [
+            [
+                "c58fc849587fb459",
+                "03f7c19c205f6e9e",
+                "51c9a9ca58a29d60"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "7c2af4dcca5829d3",
+        "type": "comment",
+        "z": "87d3f1bce7ea7cea",
+        "name": "*******************            Mejeri temp Kylrum         *******************",
+        "info": "",
+        "x": 230,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "02dc1d02f6e8eeb1",
+        "type": "comment",
+        "z": "87d3f1bce7ea7cea",
+        "name": "*******************            Butiken temp Svalrum          *******************",
+        "info": "",
+        "x": 300,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "2ad3489a93c31f7d",
+        "type": "trigger",
+        "z": "87d3f1bce7ea7cea",
+        "name": "",
+        "op1": "",
+        "op2": "",
+        "op1type": "nul",
+        "op2type": "payl",
+        "duration": "10",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 110,
+        "y": 760,
+        "wires": [
+            [
+                "e960fb71ccc11eac",
+                "098938ef8ded7a93"
+            ]
+        ]
+    },
+    {
+        "id": "b8ca3e0035650c08",
+        "type": "trigger",
+        "z": "87d3f1bce7ea7cea",
+        "name": "",
+        "op1": "",
+        "op2": "",
+        "op1type": "nul",
+        "op2type": "payl",
+        "duration": "10",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "28d2073d98b5d0c3",
+                "36a2b434573d3439"
+            ]
+        ]
+    },
+    {
+        "id": "c7a27a977bfe2a7e",
+        "type": "function",
+        "z": "87d3f1bce7ea7cea",
+        "name": "tempen på Mejeriets kylrum till Google sheet",
+        "func": "msg.payload = { val: msg.payload,\n                //val1:'hej',\n                type:'tempMejeriKylrum'};\n msg.headers = {'content-type':'application/x-www-form-urlencoded'};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 670,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9d0229d515fb8e2e",
+        "type": "rbe",
+        "z": "87d3f1bce7ea7cea",
+        "name": "Värdet måste förändras",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 610,
+        "y": 240,
+        "wires": [
+            [
+                "c7a27a977bfe2a7e"
+            ]
+        ]
+    },
+    {
+        "id": "a436d937e8eeca21",
+        "type": "comment",
+        "z": "87d3f1bce7ea7cea",
+        "name": "Diverse nummer som är bra",
+        "info": "Komunikation\n\n\n\n\nhttps://script.google.com/macros/s/AKfycbwWoet33XEKrIKHRB0M9RJgH_In3mqhaqX-RCAQ9Q9nNvIvSGc/exec?value={{{payload}}}\n\n\npushover api=>aywwp5jybu2nvb1sdzos4qfbiuv7pg\n         key=>un6ufg5f6z1wtmafxxzakisd1wtsb1",
+        "x": 1400,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "03f7c19c205f6e9e",
+        "type": "smooth",
+        "z": "87d3f1bce7ea7cea",
+        "name": "",
+        "property": "payload",
+        "action": "mean",
+        "count": "10",
+        "round": "0",
+        "mult": "single",
+        "reduce": false,
+        "x": 580,
+        "y": 160,
+        "wires": [
+            [
+                "a0cd5a7b0e5014f0",
+                "afd6dadda6685f51"
+            ]
+        ]
+    },
+    {
+        "id": "46aa20720c08cf21",
+        "type": "function",
+        "z": "87d3f1bce7ea7cea",
+        "name": "",
+        "func": "var te=context.get('te') || {};\nvar msg2={};\nvar msg3={};\nvar msg4={};\nconst highTemp=9;\nconst howManyMinutesWithHighTempBeforeAlarm=15;\nconst howManyLowTempBeforeResett=4;\nconst howMannySnoozeMinutes=30;\nconst timeAlarmUppeHoldInTenseconds=3;\nconst antalLarmInnanHoldUpp=4;\nconst textHögTemp=\"Mejeri Hög temp: \"\nconst textSnoozeKnapp=\"snooze Mejeri kylrum alarm:\";\nconst textCommError=\"Mejeri kylrum ingen kontakt\";\nconst textOkText=\"Mejeri kylrum \";\nconst textSnoozeKnappVidAlarm=\"Snooza alarm 30 minuter\";\nconst textSnoozeKnappVidSnooze=\"Snoozad \";\nconst SnoozeButtonText=\"Snoozad \"\n//msg.topic=\"larma ej\";//en slags initiering\n\n\nif (te.on===undefined){ //test exists\n    //populera klassen första gången\n    te.gotHighTemp=false;\n    te.flippFlop=false\n    //highTemp.weAreSendingAlarm=false;   //om vi sänder alarm\n    te.minutHighTempCounter=0;//vi skall vänta med att larma i \n    te.snoozeCounter=0;//minuter tills han skall larma\n    te.lowTempCounter=0;//hur många gånger han skall ha icke larm innan \n                        //han tar bort larm flagga\n    te.larmSnoozat=false;\n    te.on=0;\n    te.Alarm=\"larmAv\";\n    te.highTempMinuteBeforeAlarmCounter=0;\n    te.isItAlowedToAlarmToMobil=false;\n\n    \n    //flaggor för en larm sekvens av tre larm\n    //sedan uppehåll i 2 minuter sedan larm igen osv\n    te.counterAlarmTreSekvens=0;\n    te.counterAlarmUppehold=0;\n    te.alive=0;\n    //knapp grejor\n    te.textButton=textOkText;//först tar vi texten\n    te.colourButton=\"green\";\n    te.buttonEnabled=false;\n    te.SnoozeButtonEnabled=false;\n    te.SnoozeButtonText=\"\";\n    te.SnoozeButtonBackground=\"black\";\n    te.BeeperOn=\"0\";\n\n   // node.warn(\"Initiering\");\n}\n\n//********************************************\n//****    Vi har fått in temp angivelse    ***\n//********************************************\nif(msg.topic===\"temp\")\n    {\n        te.alive=0; //vi lever\n        if (msg.payload>highTemp)\n            {\n                //node.warn(\"sätter high temp\");\n                te.buttonEnabled=true;\n                te.colourButton=\"red\";\n                te.textButton=textHögTemp; \n                te.textButton=te.textButton+msg.payload;\n                te.textButton=te.textButton+\" grader\"\n                te.gotHighTemp=true; \n                te.lowTempCounter=0;//resetta räknaren vi fick en hög temp\n            } else\n            {\n                te.buttonEnabled=false;\n                // node.warn(\"topic=temp\");\n                //node.warn(msg.payload);\n                te.textButton=textOkText;\n                te.textButton=te.textButton+msg.payload;\n                te.textButton=te.textButton+\" grader\"  \n         \n            }\n        if(msg.payload<highTemp && te.gotHighTemp===true )  //vi är i alarm mode men fått in låg temp räkna gånger\n            {                       //\n                //node.warn(\"räknar lågtemp\");\n                te.lowTempCounter ++;\n                if(te.lowTempCounter>howManyLowTempBeforeResett) //kolla om vi skall avbryta alarm\n                    {\n                        //node.warn(\"Resettar High temp\");\n                        //resetta allt\n                        te.gotHighTemp=false;\n                        te.flippFlop=false;\n                        te.minutCounter=0;\n                        te.larmSnoozat=false;\n                        te.snoozeCounter=0;//minuter tills han skall larma\n                        te.lowTempCounter=0\n                        te.highTempMinuteBeforeAlarmCounter=0;\n                        te.isItAlowedToAlarmToMobil=false;\n                        te.colourButton=\"green\";\n                        te.SnoozeButtonEnabled=false; \n                        te.BeeperOn=\"0\";\n                        te.SnoozeButtonBackground=\"black\";\n                        te.SnoozeButtonText=\"\";\n                        \n                        \n                    }\n            }    \n            \n    }\n//********************************************\n\n//********************************************\n//****    Vi har fått in 10 sek Tick    ***\n//********************************************\n\nif(msg.topic==\"sekTick\")\n    {\n        te.alive++;//räkna upp watch dogen\n       // te.textButton=textOkText;\n        //te.textButton=te.textButton+te.alive;\n        //msg2.background=\"green\";\n        //te.colourButton=\"green\";\n        if(te.alive>8)//det har troligtvis hänt något\n            {\n              te.textButton=textCommError ;\n              //msg2.background=\"red\";\n              te.colourButton=\"red\";\n            }\n        else\n        {\n          if(te.isItAlowedToAlarmToMobil===true && te.larmSnoozat===false)//vi är i alarm mode\n            {\n                // fixa snooze text till knappen samt\n                // fixa så att den blir synlig\n                //te.textButton=textSnoozeKnapp;\n                te.SnoozeButtonText=textSnoozeKnappVidAlarm;\n                te.SnoozeButtonEnabled=true;\n                \n                //kör igång larmsekvens 3 larm till mobilen\n                //sedan uppehåll 1 minut, sedan upprepas det\n                //kör lite flippFlopp\n                \n                if(te.counterAlarmTreSekvens>antalLarmInnanHoldUpp)//har vi skickat tre larm till mobil\n                    {   //börja köra vänte timer\n                        //tja  \n                        te.counterAlarmUppehold++;\n                        // node.warn(\"håll upp med larm counter nedan\");\n                        //node.warn(te.counterAlarmUppehold);\n                    if(te.counterAlarmUppehold>timeAlarmUppeHoldInTenseconds)//\n                        {\n                        //då börjar vi om igen med allt\n                            te.counterAlarmUppehold=0;\n                            te.counterAlarmTreSekvens=0;\n                            //node.warn(\"Nu larmar vi mobil igen\");\n                        }\n                    }\n                else\n                {\n                    if(te.flippFlop===true)\n                    {\n                       // node.warn(\"Flipp Inget larm\");\n                        te.flippFlop=false; \n                        //te.SnoozeButtonEnabled=false;\n                    }\n                    else\n                    {\n                        te.flippFlop=true;\n                        te.counterAlarmTreSekvens++;\n                       // node.warn(\"Flipp larm countern nedan\");\n                        //node.warn(te.counterAlarmTreSekvens);\n                        msg.topic=\"larma till mobil\"\n                    }\n                }\n            }\n        }\n    }\n\n//********************************************\n\n//*****************************************************\n//**   Vi har fått in ett tryck på snoozeKnappen     **\n//*****************************************************\nif(msg.topic==\"snoozeKnapp\")// någon tryckte på snooze knappen\n    {\n        te.larmSnoozat=true;\n       // node.warn(\"tryckt på snooze knappen\");\n    }\n\n\n//********************************************\n\n//*****************************************************\n//**   Vi har fått ett minutTick     **\n//*****************************************************\nif(msg.topic==\"minutTick\") \n     \n    //kolla först om vi är i alarm mode\n    {\n        if(te.gotHighTemp===true && te.larmSnoozat===false )\n            //vi var i alarm mode, och ej snoozade\n            // börja att räkna fram till \"larma mobil\"\n            {\n                te.highTempMinuteBeforeAlarmCounter++;\n                if (te.highTempMinuteBeforeAlarmCounter>howManyMinutesWithHighTempBeforeAlarm)\n                    {\n                        te.highTempMinuteBeforeAlarmCounter=howManyMinutesWithHighTempBeforeAlarm;\n                        te.isItAlowedToAlarmToMobil=true;//larma till mobil\n                        te.Alarm=\"larmOn\";\n                        te.SnoozeButtonText=textSnoozeKnappVidAlarm;\n                        te.SnoozeButtonBackground=\"red\"\n                       // te.BeeperOn=true;\n                        //node.warn(\"Larma till mobil\");\n                    }\n            }\n        else if(te.larmSnoozat===true)\n            {\n               // te.BeeperOn=false;\n                te.snoozeCounter++; \n                //node.warn(\"räknar upp znoose minuter\");\n                //node.warn(te.snoozeCounter);\n                if(te.snoozeCounter>howMannySnoozeMinutes)\n                    {\n                        //vi skall larma igen\n                        te.counterAlarmUppehold=0;\n                        te.counterAlarmTreSekvens=0;\n                        te.snoozeCounter=0;\n                        te.larmSnoozat=false;\n                        te.highTempMinuteBeforeAlarmCounter=howManyMinutesWithHighTempBeforeAlarm;\n                        te.SnoozeButtonText=textSnoozeKnappVidAlarm;\n                        //node.warn(\"Snooze time slut larmar igen\");\n                    }\n            }\n    }\n//********************************************\n\n//********************************************\n//****    Här sköter vi snooze knappen      **\n//********************************************\nif(te.isItAlowedToAlarmToMobil===true && te.larmSnoozat===false) //vi skall visa knapp\n    {\n      //node.warn(\"snooze on\");\n      te.SnoozeButtonEnabled=true;\n      te.BeeperOn=\"1\";\n      te.SnoozeButtonBackground=\"red\";\n    }\nelse if(te.isItAlowedToAlarmToMobil===true && te.larmSnoozat===true) //vi skall disable knappen\n            {\n            //node.warn(\"snooze off\");\n            te.SnoozeButtonEnabled=false; \n            te.SnoozeButtonText=textSnoozeKnappVidSnooze;\n            te.SnoozeButtonText=te.SnoozeButtonText+te.snoozeCounter;\n            te.SnoozeButtonText=te.SnoozeButtonText+\" minuter\";\n            te.BeeperOn=\"0\";\n            }\nelse\n    {\n   //  te.buttonEnabled=false;\n    }\n\n\n//********************************************\n\n//********************************************\n//****    Här sköter vi Temp knappen      **\n//****    vilken färg, om enabeld samt       **\n//****    vilken text                       **\n//********************************************\n\nmsg2.topic=te.textButton;\nmsg2.enabled=te.buttonEnabled;\nmsg2.background=te.colourButton;\nif (te.colourButton==\"green\")\n{\n    msg3.payload=0;  \n}\nelse\n{\n    msg3.payload=1;   \n}\n//nu kommer snooze knappen\n\nmsg4.enabled=te.SnoozeButtonEnabled;\n\nmsg4.background=te.SnoozeButtonBackground;\nmsg4.topic=te.SnoozeButtonText;\nmsg4.bepperOn=te.BeeperOn;\n\n\n\n//********************************************\n\ncontext.set('te',te);\n\n\nreturn [msg, msg2, msg3, msg4];\n/*\n----------------------\nif(msg.topic==\"\")\n    {\n     if()\n         {\n             \n         }\n    }\nelse\n    {\n        \n    }\n---------------------\n\nif()\n    {\n        \n    }\nelse\n    {\n        \n    }\n---------------------------\n*/",
+        "outputs": 4,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1340,
+        "y": 140,
+        "wires": [
+            [
+                "cf037a3ef08c8eed"
+            ],
+            [
+                "93a4e53f8773d9f3"
+            ],
+            [
+                "8c2b8da391412b9c",
+                "01bad88a35607117"
+            ],
+            [
+                "49590156d35be508",
+                "821d13094c1e403e",
+                "4045f943ec38523b"
+            ]
+        ]
+    },
+    {
+        "id": "cf037a3ef08c8eed",
+        "type": "switch",
+        "z": "87d3f1bce7ea7cea",
+        "name": "larm till mobil",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "larma till mobil",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1550,
+        "y": 40,
+        "wires": [
+            [
+                "4134c96ea2d3d4fd"
+            ]
+        ]
+    },
+    {
+        "id": "4134c96ea2d3d4fd",
+        "type": "change",
+        "z": "87d3f1bce7ea7cea",
+        "name": "hög temp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Mejeri kylrum",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Hög temp",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1560,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f4e9bed2e3f80778",
+        "type": "comment",
+        "z": "87d3f1bce7ea7cea",
+        "name": "",
+        "info": "'green'  'gray'",
+        "x": 2800,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "cadc17448033f301",
+        "type": "function",
+        "z": "87d3f1bce7ea7cea",
+        "name": "Avbrott i komunikation till Google sheet",
+        "func": "msg.payload = { val: msg.payload,\n                //val1:'hej',\n                type:'Komunikation'};\n msg.headers = {'content-type':'application/x-www-form-urlencoded'};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 680,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a0cd5a7b0e5014f0",
+        "type": "change",
+        "z": "87d3f1bce7ea7cea",
+        "name": "topic=>temp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "temp",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 160,
+        "wires": [
+            [
+                "46aa20720c08cf21"
+            ]
+        ]
+    },
+    {
+        "id": "8c2b8da391412b9c",
+        "type": "switch",
+        "z": "87d3f1bce7ea7cea",
+        "name": "background=red",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1690,
+        "y": 160,
+        "wires": [
+            [
+                "83c26dc9eb409ac4"
+            ]
+        ]
+    },
+    {
+        "id": "83c26dc9eb409ac4",
+        "type": "change",
+        "z": "87d3f1bce7ea7cea",
+        "name": "no contact",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Mejeri kylrum ingen kontakt",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1890,
+        "y": 160,
+        "wires": [
+            [
+                "52873e52d6c1db20"
+            ]
+        ]
+    },
+    {
+        "id": "01bad88a35607117",
+        "type": "switch",
+        "z": "87d3f1bce7ea7cea",
+        "name": "background=green",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1690,
+        "y": 200,
+        "wires": [
+            [
+                "13be7d520ed65afb"
+            ]
+        ]
+    },
+    {
+        "id": "13be7d520ed65afb",
+        "type": "change",
+        "z": "87d3f1bce7ea7cea",
+        "name": "contact",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Mejeri kylrum fungerar",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1680,
+        "y": 240,
+        "wires": [
+            [
+                "52873e52d6c1db20"
+            ]
+        ]
+    },
+    {
+        "id": "52873e52d6c1db20",
+        "type": "rbe",
+        "z": "87d3f1bce7ea7cea",
+        "name": "bara en förändring",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 1930,
+        "y": 240,
+        "wires": [
+            [
+                "5e33ec4fe7f1e09d"
+            ]
+        ]
+    },
+    {
+        "id": "5e33ec4fe7f1e09d",
+        "type": "link out",
+        "z": "87d3f1bce7ea7cea",
+        "name": "",
+        "links": [
+            "1c42e270bfd1aa64"
+        ],
+        "x": 2055,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "1c42e270bfd1aa64",
+        "type": "link in",
+        "z": "87d3f1bce7ea7cea",
+        "name": "",
+        "links": [
+            "5e33ec4fe7f1e09d"
+        ],
+        "x": 495,
+        "y": 320,
+        "wires": [
+            [
+                "cadc17448033f301"
+            ]
+        ]
+    },
+    {
+        "id": "f0a41591d0807b6c",
+        "type": "inject",
+        "z": "87d3f1bce7ea7cea",
+        "name": "10 sekunder tick",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "sekTick",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1090,
+        "y": 20,
+        "wires": [
+            [
+                "46aa20720c08cf21"
+            ]
+        ]
+    },
+    {
+        "id": "735b47bc48529bb6",
+        "type": "inject",
+        "z": "87d3f1bce7ea7cea",
+        "name": "1 minut tick",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "minutTick",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1110,
+        "y": 60,
+        "wires": [
+            [
+                "46aa20720c08cf21"
+            ]
+        ]
+    },
+    {
+        "id": "afd6dadda6685f51",
+        "type": "switch",
+        "z": "87d3f1bce7ea7cea",
+        "name": "Skicka bara hög temp >=8",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "8",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 630,
+        "y": 200,
+        "wires": [
+            [
+                "9d0229d515fb8e2e"
+            ]
+        ]
+    },
+    {
+        "id": "81f6476a46cc6fd3",
+        "type": "mqtt out",
+        "z": "87d3f1bce7ea7cea",
+        "name": "",
+        "topic": "Alarma",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "70400805646f737d",
+        "x": 1560,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "4f6a2ecbe742ce87",
+        "type": "inject",
+        "z": "87d3f1bce7ea7cea",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "7",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 1410,
+        "y": 340,
+        "wires": [
+            [
+                "81f6476a46cc6fd3"
+            ]
+        ]
+    },
+    {
+        "id": "432b95c47d444b50",
+        "type": "inject",
+        "z": "87d3f1bce7ea7cea",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "7",
+        "payloadType": "num",
+        "x": 1410,
+        "y": 380,
+        "wires": [
+            [
+                "81f6476a46cc6fd3"
+            ]
+        ]
+    },
+    {
+        "id": "0cea2cd9f112299f",
+        "type": "inject",
+        "z": "87d3f1bce7ea7cea",
+        "name": "Enabel on",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Enabel",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 180,
+        "y": 1460,
+        "wires": [
+            [
+                "89d3eb2c146c6adc"
+            ]
+        ]
+    },
+    {
+        "id": "89d3eb2c146c6adc",
+        "type": "function",
+        "z": "87d3f1bce7ea7cea",
+        "name": "",
+        "func": "var msg2={};\nif(msg.topic==\"snoozeKnapp\")\n    {\n      msg.topic=\"Larm Snozat\"; \n      msg.enabled=0;\n      msg.topic=\"larm Snoozat \";\n      node.warn(\"Znooze\");\n    }\nif (msg.topic==\"Enabel\")\n    {\n    if (msg.payload==1)\n        {\n        msg.enabled=1;\n        msg.topic=\"Snooza larm\";\n        }\n    else\n        {\n         msg.enabled=0;\n         msg.topic=\"larm Snoozat \";\n        }\n    }\n    \n    \n    \n    \n    \n    \n    \nreturn msg;\n\n\n/*\nmsg2.topic=te.textButton;\nmsg2.enabled=te.buttonEnabled;\nmsg2.background=te.colourButton;\n\n\n\n*/\n\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 360,
+        "y": 1460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6888e55a679eb743",
+        "type": "inject",
+        "z": "87d3f1bce7ea7cea",
+        "name": "Enabel off",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Enabel",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 180,
+        "y": 1500,
+        "wires": [
+            [
+                "89d3eb2c146c6adc"
+            ]
+        ]
+    },
+    {
+        "id": "1c09ce4972f28f51",
+        "type": "inject",
+        "z": "87d3f1bce7ea7cea",
+        "name": "high temp",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "temp",
+        "payload": "10",
+        "payloadType": "num",
+        "x": 1120,
+        "y": 100,
+        "wires": [
+            [
+                "46aa20720c08cf21"
+            ]
+        ]
+    },
+    {
+        "id": "55840e1a31c06157",
+        "type": "comment",
+        "z": "87d3f1bce7ea7cea",
+        "name": "Vi känner av tempen",
+        "info": "Här känner vi av tempen\när tempen ok så gör vi knappen grön med rätt temp\när tempen för hög så väntar vi i 15 minuter innan larm och då skickar vi ut det till utgång 2",
+        "x": 390,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "93a4e53f8773d9f3",
+        "type": "ui_button",
+        "z": "87d3f1bce7ea7cea",
+        "name": "",
+        "group": "3a3f5e01.5e2402",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "{{msg.topic}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.background}}",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "snoozeKnapp",
+        "topicType": "str",
+        "x": 1550,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "49590156d35be508",
+        "type": "ui_button",
+        "z": "87d3f1bce7ea7cea",
+        "name": "Snoze Alarm",
+        "group": "3a3f5e01.5e2402",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "{{msg.topic}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.background}}",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "snoozeKnapp",
+        "topicType": "str",
+        "x": 1030,
+        "y": 180,
+        "wires": [
+            [
+                "46aa20720c08cf21"
+            ]
+        ]
+    },
+    {
+        "id": "52804619ebf6b0eb",
+        "type": "change",
+        "z": "87d3f1bce7ea7cea",
+        "name": "sänder 7",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "7",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1400,
+        "y": 240,
+        "wires": [
+            [
+                "81f6476a46cc6fd3"
+            ]
+        ]
+    },
+    {
+        "id": "821d13094c1e403e",
+        "type": "switch",
+        "z": "87d3f1bce7ea7cea",
+        "name": "Beeper on",
+        "property": "bepperOn",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1230,
+        "y": 240,
+        "wires": [
+            [
+                "52804619ebf6b0eb"
+            ]
+        ]
+    },
+    {
+        "id": "4045f943ec38523b",
+        "type": "switch",
+        "z": "87d3f1bce7ea7cea",
+        "name": "Beeper off",
+        "property": "bepperOn",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1220,
+        "y": 280,
+        "wires": [
+            [
+                "8a8cf5b102741176"
+            ]
+        ]
+    },
+    {
+        "id": "8a8cf5b102741176",
+        "type": "change",
+        "z": "87d3f1bce7ea7cea",
+        "name": "sänder 0",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1410,
+        "y": 280,
+        "wires": [
+            [
+                "81f6476a46cc6fd3"
+            ]
+        ]
+    },
+    {
+        "id": "bbeb26f7ead14da3",
+        "type": "inject",
+        "z": "87d3f1bce7ea7cea",
+        "name": "low temp",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "temp",
+        "payload": "3",
+        "payloadType": "num",
+        "x": 1120,
+        "y": 140,
+        "wires": [
+            [
+                "46aa20720c08cf21"
+            ]
+        ]
+    },
+    {
+        "id": "36a2b434573d3439",
+        "type": "debug",
+        "z": "87d3f1bce7ea7cea",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "1dacbdaadfa1d451",
+        "type": "function",
+        "z": "87d3f1bce7ea7cea",
+        "name": "Sätt status + färg",
+        "func": "if (msg.payload === \"OFFLINE\") {\n    msg.status = \"OFFLINE\";\n    msg.color = \"red\";\n    msg.payload = 0;  // värde på gauge när OFFLINE\n} else {\n    msg.status = \"OK\";\n    msg.color = \"lime\"; // ljusgrön\n    msg.payload = Number(msg.payload);\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 820,
+        "wires": [
+            [
+                "ab6e90fce0bbe4f9",
+                "cfbe682df8b6cf20"
+            ]
+        ]
+    },
+    {
+        "id": "098938ef8ded7a93",
+        "type": "trigger",
+        "z": "87d3f1bce7ea7cea",
+        "name": "Watchdog 40 s",
+        "op1": "",
+        "op2": "OFFLINE",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "40",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 120,
+        "y": 820,
+        "wires": [
+            [
+                "1dacbdaadfa1d451"
+            ]
+        ]
+    },
+    {
+        "id": "ab6e90fce0bbe4f9",
+        "type": "ui_gauge",
+        "z": "87d3f1bce7ea7cea",
+        "name": "Mejeri Kylrum",
+        "group": "a80fad93fdca0d11",
+        "order": 1,
+        "width": 3,
+        "height": 2,
+        "gtype": "gage",
+        "title": "",
+        "label": "",
+        "format": "{{value | number:1}}",
+        "min": 0,
+        "max": "10",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "4",
+        "seg2": "7",
+        "diff": false,
+        "className": "",
+        "x": 620,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "cfbe682df8b6cf20",
+        "type": "ui_template",
+        "z": "87d3f1bce7ea7cea",
+        "group": "a80fad93fdca0d11",
+        "name": "Statusrad",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"text-align:center; margin-bottom:4px;\">\n    <span style=\"color: {{msg.color}}; font-weight:bold; font-size: 12px;\">\n        {{msg.status}}\n    </span>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 600,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4f8368fddc021125",
+        "type": "inject",
+        "z": "87d3f1bce7ea7cea",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "OFFLINE",
+        "payloadType": "str",
+        "x": 180,
+        "y": 1000,
+        "wires": [
+            [
+                "1dacbdaadfa1d451"
+            ]
+        ]
+    },
+    {
+        "id": "c243c4b176b6d4e2",
+        "type": "ui_gauge",
+        "z": "87d3f1bce7ea7cea",
+        "name": "Mejeri Kylrum",
+        "group": "467e2aa29f61ab0b",
+        "order": 1,
+        "width": 3,
+        "height": 2,
+        "gtype": "gage",
+        "title": "",
+        "label": "",
+        "format": "{{value | number:1}}",
+        "min": 0,
+        "max": "10",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "4",
+        "seg2": "7",
+        "diff": false,
+        "className": "",
+        "x": 600,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "c8aeb7af1f1093f9",
+        "type": "ui_template",
+        "z": "87d3f1bce7ea7cea",
+        "group": "467e2aa29f61ab0b",
+        "name": "Statusrad",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"text-align:center; margin-bottom:4px;\">\n    <span style=\"color: {{msg.color}}; font-weight:bold; font-size: 12px;\">\n        {{msg.status}}\n    </span>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 580,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2e5cc4b3bc3104a7",
+        "type": "function",
+        "z": "87d3f1bce7ea7cea",
+        "name": "Sätt status + färg",
+        "func": "if (msg.payload === \"OFFLINE\") {\n    msg.status = \"OFFLINE\";\n    msg.color = \"red\";\n    msg.payload = 0;  // värde på gauge när OFFLINE\n} else {\n    msg.status = \"OK\";\n    msg.color = \"lime\"; // ljusgrön\n    msg.payload = Number(msg.payload);\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 440,
+        "wires": [
+            [
+                "c243c4b176b6d4e2",
+                "c8aeb7af1f1093f9"
+            ]
+        ]
+    },
+    {
+        "id": "51c9a9ca58a29d60",
+        "type": "trigger",
+        "z": "87d3f1bce7ea7cea",
+        "name": "Watchdog 40 s",
+        "op1": "",
+        "op2": "OFFLINE",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "40",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 200,
+        "y": 440,
+        "wires": [
+            [
+                "2e5cc4b3bc3104a7"
+            ]
+        ]
+    },
+    {
+        "id": "inj_tid",
+        "type": "inject",
+        "z": "tid_watchdog_flow",
+        "name": "Trigga varje 5 s",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 120,
+        "wires": [
+            [
+                "fn_build_time"
+            ]
+        ]
+    },
+    {
+        "id": "fn_build_time",
+        "type": "function",
+        "z": "tid_watchdog_flow",
+        "name": "Bygg datum + tid",
+        "func": "let now = new Date();\n\nmsg.date = now.toLocaleDateString(\"sv-SE\", {\n    weekday: \"short\",   // mån, tis, ons\n    day: \"2-digit\",\n    month: \"short\",     // jan, feb, mar\n    year: \"numeric\"\n});\n\nmsg.time = now.toLocaleTimeString(\"sv-SE\", {\n    hour: \"2-digit\",\n    minute: \"2-digit\",\n    second: \"2-digit\",\n    hour12: false,\n    timeZone: \"Europe/Stockholm\"\n});\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 120,
+        "wires": [
+            [
+                "tpl_tid"
+            ]
+        ]
+    },
+    {
+        "id": "tpl_tid",
+        "type": "ui_template",
+        "z": "tid_watchdog_flow",
+        "group": "bf776b8afb685c77",
+        "name": "Senast uppdaterad",
+        "order": 1,
+        "width": 6,
+        "height": 2,
+        "format": "<div style=\"text-align:center; padding-top:6px; padding-bottom:6px;\">\n  <div style=\"font-size:14px;\">\n    {{msg.date}}\n  </div>\n  <div style=\"font-size:24px; font-weight:bold; margin-top:4px;\">\n    {{msg.time}}\n  </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 630,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fb72bd8a77c0a3b0",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6",
+            "node-red-node-smooth": "0.1.2"
+        }
+    }
+]
